@@ -63,3 +63,17 @@ When comparing correlations there is many different ways you might do this when 
 You can look to see when either changes by a minimum amounts, or when one changes, or when both have changed. 
 You might also prefer to sub-sample the data before performing correlation to reduce noise.
 
+# Predictive testing.
+The ultimate purpose of the library is to find patterns which might have predictive power. To do this
+you need to estimate a forward movement in a metric you would want to predict and find inputs which
+would can help estimate this forward.
+
+The steps to do this are
+
+- estimate the time horizon you need e.g. 5 mins, an hour, 5 days. THZ
+- generate a forward by comparing the difference between the current and current + THZ.
+- find a correlation between the inputs and this forward.
+ 
+If you look at enough inputs you will find spurious correlations so you need to take a view on which 
+correlations are predictive or not. [http://tylervigen.com/spurious-correlations]
+
