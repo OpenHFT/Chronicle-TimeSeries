@@ -87,7 +87,6 @@ public enum BytesDoubleLookups implements BytesDoubleLookup {
             return capacity << 1;
         }
 
-
         @Override
         public boolean supportNaN() {
             return true;
@@ -113,7 +112,6 @@ public enum BytesDoubleLookups implements BytesDoubleLookup {
             return capacity << 1;
         }
 
-
         @Override
         public boolean supportNaN() {
             return true;
@@ -138,7 +136,6 @@ public enum BytesDoubleLookups implements BytesDoubleLookup {
         public long sizeFor(long capacity) {
             return capacity << 1;
         }
-
 
         @Override
         public boolean supportNaN() {
